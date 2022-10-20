@@ -1,8 +1,18 @@
 $body-background:rgb(33, 39, 44);
+
 $logo-hover-color: rgb(255, 0, 0);
 $logo-color: rgb(203, 13, 13);
+
 $movie-title-color:rgb(255, 255, 255);
+$movie-title-hover-color:rgb(203, 13, 13);
+
+
+$rate-title-color:rgb(255, 255, 255);
+$rate-background-color:rgb(203, 13, 13);
+
 $movie-genre-color:rgb(203, 13, 13);
+
+
 $placeholder-color:rgb(193, 193, 193);
 
 *{
@@ -14,11 +24,18 @@ $placeholder-color:rgb(193, 193, 193);
 
 html{
     font-family: Open Sans;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 10px;
 }
 
 body{
     
     background:$body-background;
+}
+a{
+    text-decoration: none;
+}
+
+.hide{
+    display: none;
 }

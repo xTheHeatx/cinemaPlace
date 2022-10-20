@@ -27,16 +27,20 @@ function renderCards(data) {
 
     data.films.forEach((item) => {
         const card = document.createElement("div")
+        card.classList.add("movie-card")
 
-        card.innerHTML = `<div class="movies__movie-card movie-card">
-                                <div class="movie-card__img-block">
+        card.innerHTML = `<div class="movie-card__img-block">
+                            <div class="movie-card__rate">${item.rating}</div>
+                            <a className="movie-card__film-link" href="${item.posterUrl}">
+                                <img class="movie-card__img" src="${item.posterUrlPreview}" alt="${item.nameRu}" style='height: 100%; width: 100%; object-fit: cover'>
+                            </a>
+                            </div>
+                                <div className="movie-card__title-block">
                                     <a className="movie-card__film-link" href="${item.posterUrl}">
-                                     <img class="movie-card__img" src="${item.posterUrlPreview}" alt="${item.nameRu}">
-                                     </a>
-                                </div>
-                                <h2 class="movie-card__title">${item.nameRu}</h2>
-                                <h2 class="movie-card__genre">${item.genres.map(genre => ` ${genre.genre}`)}</h2>
-                            </div>`;
+                                        <h2 class="movie-card__title">${item.nameRu}</h2>
+                                    </a>
+                                    <h2 class="movie-card__genre">${item.genres.map(genre => ` ${genre.genre}`)}</h2>
+                                </div>`
 
         wrapper.appendChild(card)
     });
