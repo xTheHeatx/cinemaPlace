@@ -1,0 +1,43 @@
+
+.movie-card {
+    
+    margin-right: 80px;
+    width: 400px;
+    height: 680px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+
+
+    &__img-block {
+        width: 400px;
+        height: 570px;
+        background: saddlebrown;
+        transition: 1s linear;
+
+        &:hover{
+            background: rgba($color: #dedede, $alpha: 0.3);
+            transition: 1s linear;
+            
+
+        }
+    }
+
+    &__title {
+
+        padding: 30px 0 0px 0;
+
+        color: $movie-title-color;
+        font-size: 3rem;
+        font-weight: 400;
+        
+    }
+
+    &__genre {
+        padding: 30px 0 0px 0;
+
+        color: $movie-genre-color;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
