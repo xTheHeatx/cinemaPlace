@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
-  width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,9 +18,13 @@ body {
 .header__wrapper {
   padding: 100px 80px 50px 80px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .header__logo-title {
-  color: rgb(255, 255, 255);
+  color: rgb(203, 13, 13);
   font-size: 6rem;
   font-weight: 700;
   text-decoration: none;
@@ -30,24 +33,28 @@ body {
 }
 .header__logo-title:hover {
   transition: 0.7s linear;
-  text-shadow: 4px 4px 20px #ff3c00;
+  text-shadow: 1px 1px 30px rgb(255, 0, 0);
 }
 .header__search {
-  height: 30px;
-  max-width: 200px;
+  padding-top: 7px;
+  height: 60px;
+  width: 400px;
   border-radius: 30px;
   border: none;
   box-shadow: 4px 4px 20px black;
 }
 .header__search::-moz-placeholder {
+  font-size: 2.2rem;
   text-align: center;
   color: rgb(193, 193, 193);
 }
 .header__search:-ms-input-placeholder {
+  font-size: 2.2rem;
   text-align: center;
   color: rgb(193, 193, 193);
 }
 .header__search::placeholder {
+  font-size: 2.2rem;
   text-align: center;
   color: rgb(193, 193, 193);
 }
@@ -58,12 +65,11 @@ body {
 .movies__wrapper {
   padding: 50px 80px 50px 80px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 .movie-card {
-  margin-right: 80px;
+  margin: 0 30px 60px 0;
   width: 400px;
   height: 680px;
   background: transparent;
@@ -71,20 +77,26 @@ body {
   flex-direction: column;
 }
 .movie-card__img-block {
-  width: 400px;
-  height: 570px;
-  background: saddlebrown;
+  display: flex;
+  width: 360px;
+  height: 550px;
   transition: 1s linear;
 }
-.movie-card__img-block:hover {
-  background: rgba(222, 222, 222, 0.3);
-  transition: 1s linear;
+.movie-card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s linear;
+}
+.movie-card__img:hover {
+  transform: scale(1.1);
 }
 .movie-card__title {
   padding: 30px 0 0px 0;
   color: rgb(255, 255, 255);
   font-size: 3rem;
   font-weight: 400;
+  line-height: 4rem;
+  text-align: left;
 }
 .movie-card__genre {
   padding: 30px 0 0px 0;

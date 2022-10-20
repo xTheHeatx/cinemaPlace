@@ -1,27 +1,38 @@
 
 .movie-card {
     
-    margin-right: 80px;
+    margin: 0 30px 60px 0;
     width: 400px;
     height: 680px;
     background: transparent;
     display: flex;
     flex-direction: column;
+    
 
 
     &__img-block {
-        width: 400px;
-        height: 570px;
-        background: saddlebrown;
+
+        display: flex;
+        
+        width: 360px;
+        height: 550px;
         transition: 1s linear;
 
+    }
+    &__img{
+        object-fit: cover;
+        
+        transition: 0.5s linear;
+
         &:hover{
-            background: rgba($color: #dedede, $alpha: 0.3);
-            transition: 1s linear;
+            transform: scale(1.1);
+            
             
 
         }
     }
+
+    
 
     &__title {
 
@@ -30,6 +41,9 @@
         color: $movie-title-color;
         font-size: 3rem;
         font-weight: 400;
+        line-height: 4rem;
+
+        text-align: left;
         
     }
 
