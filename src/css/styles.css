@@ -40,6 +40,9 @@ a {
 .header__logo-title:hover {
   text-shadow: 1px 1px 30px rgb(255, 0, 0);
 }
+.header__logo-icon {
+  transform: scale(0.2);
+}
 .header__search {
   padding: 2px 0 0 15px;
   height: 30px;
@@ -78,6 +81,9 @@ a {
   transition: 0.5s linear;
 }
 
+.movies {
+  margin: 150px 0 0 0;
+}
 .movies__wrapper {
   padding: 50px 80px 50px 80px;
   display: flex;

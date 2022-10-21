@@ -25,6 +25,11 @@
         }
        
     }
+    &__logo-icon{
+        // position: absolute;
+        // margin: 0px 0px -45px -40px;
+        transform: scale(0.2);
+    }
 
     &__search{
         padding: 2px 0 0 15px;
